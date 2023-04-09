@@ -1,0 +1,216 @@
+* {
+  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: 000000;
+}
+
+.separator {
+  border: none;
+  border-top: 0.5px solid lightgray;
+  width: 100%;
+  margin: 0;
+}
+
+/* .parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1vh;
+}
+.separatorShort {
+  border: none;
+  border-top: 0.5px solid lightgray;
+  width: 100%;
+  max-width: 80%;
+  margin: 0;
+} */
+
+h2 {
+  margin-top: 0;
+  color: #454654;
+  font-size: 1.5em;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: #202123;
+}
+
+.container {
+  max-width: 950px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 32px 32px;
+  /* box-shadow: 0 4px 40px -8px rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.container form label {
+  font-size: 0.8em;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 2px solid lightgray;
+  color: #737483;
+  height: 40px;
+  width: 300px;
+  display: flex;
+  border-radius: 3px;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.225em;
+  cursor: pointer;
+  /* padding: 10px 10px; */
+  padding: 0 1.5em;
+  height: 3.125em;
+  /* Add padding to prevent text from sticking to the edge */
+  position: relative;
+  /* Add this property to ensure the span is within the label */
+
+
+}
+
+
+.container form label span {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 100%;
+  /* Set the max-width to prevent the text from exceeding the label width */
+  position: absolute;
+  /* Add this property to position the span within the label */
+}
+
+.container form label:hover {
+  background-color: rgb(240, 240, 240);
+}
+
+.container form input[type='radio']:checked+label {
+  /* background-color: #FB2341; */
+  background-color: #FFFF;
+  color: #202123;
+  font-weight: bold;
+  border: 3px solid #202123;
+}
+
+.container .targetLanguages {
+  display: flex;
+  gap: 16px;
+}
+
+.container form input[type='radio'] {
+  display: none;
+}
+
+.container textarea {
+  padding: 16px;
+  font-size: 18px;
+  height: 200px;
+  border-radius: 3px;
+  resize: none;
+  border-width: 0.5px;
+  background-color: rgba(144, 144, 144, 0.05);
+  border-color: lightgray;
+  line-height: 1.7;
+}
+
+.container textarea:focus {
+  border-color: #202123;
+  outline: 0.5px solid #202123;
+}
+
+.container button {
+  padding: 0 1.5em;
+  border: none;
+  background-color: #202123;
+  color: white;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 0.225em;
+  text-transform: uppercase;
+  height: 3.125em;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #000000;
+}
+
+.translation {
+  padding: 12px 32px;
+  background-color: rgba(144, 144, 144, 0.1);
+  border-radius: 3px;
+  margin-top: 20px;
+  font-size: 16px;
+  line-height: 1.7;
+  height: 200px;
+  overflow-y: scroll;
+  position: relative;
+}
+
+.translation::before {
+  content: "";
+  display: block;
+  height: 1.7em;
+}
+
+
+.translation .copy-btn {
+  position: absolute;
+  width: 20px;
+  top: 16px;
+  right: 16px;
+  cursor: pointer;
+}
+
+.translation .copy-btn :hover {
+  color: #000000;
+}
+
+
+.notification {
+  position: fixed;
+  min-width: 200px;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100px);
+  /* background-color: #202123; */
+  background-color: rgba(32, 33, 35, 0.8);
+  color: white;
+  padding: 12px 24px;
+  text-transform: uppercase;
+  transition: all 400ms ease;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 0.225em;
+}
+
+.notification.active {
+  transform: translate(-50%, -50px);
+}
+
+.error {
+  color: #FB2341;
+  font-size: 0.8em;
+  font-weight: 600;
+  border-radius: 3px;
+  letter-spacing: 0.225em;
+  text-transform: uppercase;
+}
