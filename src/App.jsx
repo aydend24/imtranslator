@@ -91,8 +91,6 @@ const App = () => {
 
     <br />
 
-    {/* <h1>Translator</h1> */}
-
     <form onSubmit={handleOnSubmit}>
 
       <textarea
@@ -103,7 +101,6 @@ const App = () => {
 
       {error && <div className="error">{error}</div>}
 
-      {/* <br/> */}
 
       <div class="parent">
         <div class="separatorShort"></div>
