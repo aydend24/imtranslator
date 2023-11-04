@@ -1,6 +1,6 @@
-# i/m>Translator
+# 📝 Note: Thank you for checking, however, this is a GitHub repository for an experimental demo project which will no longer receive updates, maintenance, or modifications.
 
-### This is a repository that will no longer be updated or maintained
+# i/m>Translator
 
 An AI-driven translator that leverages the latest web technologies for an optimal user experience. Engineered with JavaScript, HTML, the OpenAI API, Node.js, Vite, and React App, our design is carefully refined using Figma to ensure an intuitive and captivating user interface.
 
